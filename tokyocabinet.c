@@ -3395,6 +3395,7 @@ static void adb_init(void){
   rb_define_method(cls_adb, "value?", adb_check_value, 1);
   rb_define_method(cls_adb, "key", adb_get_reverse, 1);
   rb_define_method(cls_adb, "clear", adb_vanish, 0);
+  rb_define_method(cls_adb, "size", adb_rnum, 0);
   rb_define_method(cls_adb, "length", adb_rnum, 0);
   rb_define_method(cls_adb, "empty?", adb_empty, 0);
   rb_define_method(cls_adb, "each", adb_each, 0);
